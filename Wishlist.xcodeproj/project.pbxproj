@@ -14,6 +14,8 @@
 		910568072DC6928400A61168 /* WishlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910568062DC6928400A61168 /* WishlistTests.swift */; };
 		910568112DC6928400A61168 /* WishlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910568102DC6928400A61168 /* WishlistUITests.swift */; };
 		910568132DC6928400A61168 /* WishlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910568122DC6928400A61168 /* WishlistUITestsLaunchTests.swift */; };
+		910568222DC696FB00A61168 /* WishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910568212DC696FB00A61168 /* WishModel.swift */; };
+		910568252DC6974700A61168 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 910568242DC6974700A61168 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		9105680C2DC6928400A61168 /* WishlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		910568102DC6928400A61168 /* WishlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistUITests.swift; sourceTree = "<group>"; };
 		910568122DC6928400A61168 /* WishlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		910568212DC696FB00A61168 /* WishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910568252DC6974700A61168 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 		910567F42DC6928200A61168 /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
+				910568212DC696FB00A61168 /* WishModel.swift */,
 				910567F52DC6928200A61168 /* WishlistApp.swift */,
 				910567F72DC6928200A61168 /* ContentView.swift */,
 				910567F92DC6928400A61168 /* Assets.xcassets */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Wishlist;
+			packageProductDependencies = (
+				910568242DC6974700A61168 /* Algorithms */,
+			);
 			productName = Wishlist;
 			productReference = 910567F22DC6928200A61168 /* Wishlist.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 910567E92DC6928200A61168;
+			packageReferences = (
+				910568232DC6974700A61168 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 910567F32DC6928200A61168 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910568222DC696FB00A61168 /* WishModel.swift in Sources */,
 				910567F82DC6928200A61168 /* ContentView.swift in Sources */,
 				910567F62DC6928200A61168 /* WishlistApp.swift in Sources */,
 			);
@@ -577,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		910568232DC6974700A61168 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		910568242DC6974700A61168 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 910568232DC6974700A61168 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 910567EA2DC6928200A61168 /* Project object */;
 }
